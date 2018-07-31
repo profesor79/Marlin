@@ -519,7 +519,7 @@
 // @section lcd
 
 // Include a page of printer information in the LCD Main Menu
-//#define LCD_INFO_MENU
+#define LCD_INFO_MENU
 
 // Scroll a longer status message into view
 //#define STATUS_MESSAGE_SCROLLING
@@ -531,10 +531,10 @@
 //#define LCD_TIMEOUT_TO_STATUS 15000
 
 // Add an 'M73' G-code to set the current percentage
-//#define LCD_SET_PROGRESS_MANUALLY
+#define LCD_SET_PROGRESS_MANUALLY
 
 #if ENABLED(SDSUPPORT) || ENABLED(LCD_SET_PROGRESS_MANUALLY)
-  //#define LCD_PROGRESS_BAR              // Show a progress bar on HD44780 LCDs for SD printing
+  //efine LCD_PROGRESS_BAR              // Show a progress bar on HD44780 LCDs for SD printing
   #if ENABLED(LCD_PROGRESS_BAR)
     #define PROGRESS_BAR_BAR_TIME 2000    // (ms) Amount of time to show the bar
     #define PROGRESS_BAR_MSG_TIME 3000    // (ms) Amount of time to show the status message
@@ -643,7 +643,7 @@
    * This feature must be enabled with "M540 S1" or from the LCD menu.
    * To have any effect, endstops must be enabled during SD printing.
    */
-  //#define ABORT_ON_ENDSTOP_HIT_FEATURE_ENABLED
+  #define ABORT_ON_ENDSTOP_HIT_FEATURE_ENABLED
 
   /**
    * This option makes it easier to print the same SD Card file again.
@@ -683,7 +683,7 @@
 
   // A bigger font is available for edit items. Costs 3120 bytes of PROGMEM.
   // Western only. Not available for Cyrillic, Kana, Turkish, Greek, or Chinese.
-  //#define USE_BIG_EDIT_FONT
+  #define USE_BIG_EDIT_FONT
 
   // A smaller font may be used on the Info Screen. Costs 2300 bytes of PROGMEM.
   // Western only. Not available for Cyrillic, Kana, Turkish, Greek, or Chinese.
